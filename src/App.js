@@ -14,12 +14,12 @@ class App extends Component {
         search: "", gender: "all"
     };
 
-      //const sample = {
-      //  name: { first: "Joe", last: "Bloggs" },
-      //  email: "j.bloggs@example.com",
-      //  phone: "012-3456789",
-      //  picture: { thumbnail: "./profile.png" }
-      //};
+
+    deleteContact = (key) => {
+        api.delete(key);
+        this.setState({});
+    };
+
 
 
  componentDidMount(){
@@ -44,7 +44,7 @@ render() {
         <div className="jumbotron">
           <Header noContacts={contacts.length} />
           <FilterControls />
-          <ContactList contacts={contacts} />
+          <ContactList contacts={contacts}  deleteHandler={this.deleteContact} />
         </div>
     );
   }
