@@ -9,6 +9,11 @@ import api from "./datastore/stubAPI";
 
 class App extends Component {
 
+
+    state = {
+        search: "", gender: "all"
+    };
+
       //const sample = {
       //  name: { first: "Joe", last: "Bloggs" },
       //  email: "j.bloggs@example.com",
