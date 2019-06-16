@@ -5,6 +5,8 @@ import Header from '../src/components/header/'
 import FilterControls from '../src/components/filterControls/'
 import Contact from '../src/components/contact/'
 import ContactList from '../src/components/contactList/'
+import { action } from '@storybook/addon-actions';
+
 
 const sample = {
     name: {first:'Joe', last:'Bloggs'},
@@ -25,9 +27,9 @@ storiesOf("Contact List App/Filter Controls", module).add("default", () => (
 ))
 
 //  . . . . other stories . . . .
-storiesOf("Contact List App/Contact", module).add("default", () => (
-    <Contact contact={sample}/>
-));
+// storiesOf("Contact List App/Contact", module).add("default", () => (
+//    <Contact contact={sample}/>
+// ));
 
 
 
@@ -35,3 +37,7 @@ storiesOf("Contact List App/Contact List", module).add("default", () => {
     const samples = [sample, sample, sample, sample, sample]
     return <ContactList contacts={samples}/>
 });
+
+storiesOf("Contact List App/Contact", module).add("default", () => (
+    <Contact contact={sample} deleteHandler={action('Delete confirmed') }/>
+));
