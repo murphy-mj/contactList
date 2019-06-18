@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,Fragment } from "react";
 import Header from "./components/header/";
 import ContactList from "./components/contactList/";
 import FilterControls from "./components/filterControls/";
@@ -30,18 +30,18 @@ class App extends Component {
 
 
 
-    componentDidMount(){
-      request.get("https://randomuser.me/api/?results=10").end((error, res) => {
-          if (res) {
-              let {results: contacts} = JSON.parse(res.text);
-              //let contacts = JSON.parse(res.text);
-              api.initialize(contacts);
-              this.setState({});
-          } else {
-              console.log(error);
-          }
-      });
-  }
+ //   componentDidMount(){
+ //     request.get("https://randomuser.me/api/?results=10").end((error, res) => {
+ //         if (res) {
+ //             let {results: contacts} = JSON.parse(res.text);
+ //             //let contacts = JSON.parse(res.text);
+ //             api.initialize(contacts);
+ //             this.setState({});
+ //         } else {
+ //             console.log(error);
+ //         }
+ //     });
+ // }
 
 
 
@@ -58,11 +58,14 @@ render() {
             : filteredContacts.filter(c => c.gender === this.state.gender);
     let sortedContacts = _.sortBy(filteredContacts, c => c.name.last);
     return (
-        <div className="jumbotron">
-          <Header noContacts={sortedContacts.length} />
-          <FilterControls  onUserInput={this.handleChange}/>
-          <ContactList contacts={sortedContacts}  deleteHandler={this.deleteContact} />
-        </div>
+        <Fragment>
+            <Header noContacts={sortedContacts.length} />
+            <FilterControls onUserInput={this.handleChange} />
+            <ContactList
+                contacts={sortedContacts}
+                deleteHandler={this.deleteContact}
+            />
+        </Fragment>
     );
   }
 }
