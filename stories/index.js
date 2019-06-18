@@ -7,6 +7,12 @@ import Contact from '../src/components/contact/'
 import ContactList from '../src/components/contactList/'
 import { action } from '@storybook/addon-actions';
 import { MemoryRouter, Route } from "react-router";
+import PublicProfile from '../src/components/contactPublic/publicProfile'
+
+
+
+
+
 
 //const sample = {
 //    name: {first:'Joe', last:'Bloggs'},
@@ -32,6 +38,13 @@ storiesOf("Contact List App/Contact List", module)
         const samples = [sample, sample, sample, sample, sample]
         return <ContactList contacts={samples}/>
     });
+
+storiesOf("Contact List App/Contact Page/PublicProfile", module)
+    .add("default", () => (
+        <PublicProfile user={sample}/>
+    ));
+
+
 
 
 const sample = {

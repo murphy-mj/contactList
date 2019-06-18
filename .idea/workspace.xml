@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9f84bbc-311b-493d-9c78-6f254b153ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/contactPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contactPublic/publicProfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/stories/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +18,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/stories/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="323">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
-                <element signature="e#231#289#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,19 +46,20 @@
         <option value="$PROJECT_DIR$/src/components/contactList/index.js" />
         <option value="$PROJECT_DIR$/.storybook/addons.js" />
         <option value="$PROJECT_DIR$/src/components/filterControls/index.js" />
-        <option value="$PROJECT_DIR$/stories/index.js" />
         <option value="$PROJECT_DIR$/src/util.js" />
         <option value="$PROJECT_DIR$/src/fontawesome.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/contactPage.js" />
         <option value="$PROJECT_DIR$/src/components/contact/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/components/contactPublic/publicProfile.js" />
+        <option value="$PROJECT_DIR$/stories/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="470" />
-    <option name="y" value="103" />
+    <option name="x" value="830" />
+    <option name="y" value="46" />
     <option name="width" value="1115" />
     <option name="height" value="688" />
   </component>
@@ -75,11 +74,6 @@
             <path>
               <item name="contactList" type="b2602c69:ProjectViewProjectNode" />
               <item name="contactList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="contactList" type="b2602c69:ProjectViewProjectNode" />
-              <item name="contactList" type="462c0819:PsiDirectoryNode" />
-              <item name=".storybook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="contactList" type="b2602c69:ProjectViewProjectNode" />
@@ -132,15 +126,15 @@
       <workItem from="1560455161512" duration="3632000" />
       <workItem from="1560629583940" duration="15860000" />
       <workItem from="1560704220700" duration="1849000" />
-      <workItem from="1560859712351" duration="2808000" />
+      <workItem from="1560859712351" duration="3440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24149000" />
+    <option name="totallyTimeSpent" value="24781000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="376" y="83" width="892" height="550" extended-state="0" />
+    <frame x="574" y="234" width="892" height="550" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30865604" />
@@ -156,14 +150,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30382776" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.49433106" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30865604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30865604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -176,8 +170,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30382776" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.49433106" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -279,16 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stories/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -330,6 +314,23 @@
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
             <element signature="e#231#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/contactPublic/publicProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stories/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
