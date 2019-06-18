@@ -8,8 +8,7 @@ import ContactList from '../src/components/contactList/'
 import { action } from '@storybook/addon-actions';
 import { MemoryRouter, Route } from "react-router";
 import PublicProfile from '../src/components/contactPublic/publicProfile'
-
-
+import ContactPrivateDetails from '../src/components/contactPrivate/'
 
 
 
@@ -45,6 +44,10 @@ storiesOf("Contact List App/Contact Page/PublicProfile", module)
     ));
 
 
+storiesOf("Contact List App/Contact Page/ContactPrivate", module)
+    .add("default", () => (
+        <ContactPrivateDetails user={sample}/>
+    ));
 
 
 const sample = {
