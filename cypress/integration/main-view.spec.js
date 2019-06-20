@@ -57,32 +57,77 @@ describe("Main View ", () => {
                 .click();
             cy.get(".badge").should("contain", 50);
         });
-    })
 
-    it("allows an edit be cancelled", () => {
-        cy.get("@targetcard")
-            .find("[data-icon=envelope]")
-            .next()
-            .invoke("text")
-            .then($text => {
-                cy.get("@cardbuttons")
-                    .contains("Edit")
-                    .click();
-                cy.get("@targetcard")
-                    .find("input")
-                    .first()
-                    .clear()
-                    .type("test@example.com");
-                cy.get("@cardbuttons")
-                    .contains("Cancel")
-                    .click();
-                cy.get("@targetcard")
-                    .find("[data-icon=envelope]")
-                    .next()
-                    .should("contain", $text);
-            });
+
+        it("allows an edit be cancelled", () => {
+            cy.get("@targetcard")
+                .find("[data-icon=envelope]")
+                .next()
+                .invoke("text")
+                .then($text => {
+                    cy.get("@cardbuttons")
+                        .contains("Edit")
+                        .click();
+                    cy.get("@targetcard")
+                        .find("input")
+                        .first()
+                        .clear()
+                        .type("test@example.com");
+                    cy.get("@cardbuttons")
+                        .contains("Cancel")
+                        .click();
+                    cy.get("@targetcard")
+                        .find("[data-icon=envelope]")
+                        .next()
+                        .should("contain", $text);
+                });
+        });
     });
 
+
+    describe("Filtering", () => {
+        it("filteres the contacts by name", () => {
+            cy.get("span")
+                .contains("Filter")
+                .next()
+                .type("la");
+            cy.get(".card").each($el => {
+                cy.wrap($el)
+                    .find(".card-title")
+                    .contains("la");
+            });
+        });
+
+        it("filters the contacts by gender", () => {
+            cy.get("select").select("Female");
+            cy.get(".card")
+                .its("length")
+                .then(females => {
+                    cy.get("select").select("Male");
+                    cy.get(".card")
+                        .its("length")
+                        .should("eq", 50 - females);
+                });
+        });
+    });
+
+
+    describe("Navigate to Contact page", () => {
+         // it("goes to the correct view", () => {
+         it.only("goes to the correct view", () => {
+            cy.get("@targetcard")
+                .find("[data-icon=phone]")
+                .next()
+                .invoke("text")
+                .then(phoneNo => {
+                    cy.get("@targetcard")
+                        .find("img")
+                        .click();
+                    cy.url().should("include", `/contacts/${phoneNo.trim()}`);
+                    cy.get("span").contains(phoneNo.trim());
+                });
+        });
+    });
+
+
 });
-
-

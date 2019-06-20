@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9f84bbc-311b-493d-9c78-6f254b153ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cypress/integration/main-view.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/main-view.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/main-view.spec.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cypress/integration/main-view.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+            <state relative-caret-position="142">
+              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -78,7 +77,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="857" />
+    <option name="x" value="822" />
+    <option name="y" value="36" />
     <option name="width" value="1115" />
     <option name="height" value="1039" />
   </component>
@@ -181,15 +181,15 @@
       <workItem from="1560629583940" duration="15860000" />
       <workItem from="1560704220700" duration="1849000" />
       <workItem from="1560859712351" duration="8851000" />
-      <workItem from="1561063111401" duration="2656000" />
+      <workItem from="1561063111401" duration="4262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32848000" />
+    <option name="totallyTimeSpent" value="34454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="686" y="0" width="892" height="831" extended-state="0" />
+    <frame x="658" y="29" width="892" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.31695905" />
@@ -206,7 +206,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295129" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32921812" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.19313304" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19313304" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,8 +431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/integration/main-view.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="85" column="3" selection-start-line="85" selection-start-column="3" selection-end-line="85" selection-end-column="3" />
+        <state relative-caret-position="142">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
         </state>
       </provider>
     </entry>
