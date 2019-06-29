@@ -4,15 +4,16 @@ import "../../fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./contactPublic.css";
 import { Link } from "react-router-dom";
-import PublicProfile from "../contactPublic/publicProfile"
+import PublicProfile from "../contactPublic/publicProfile";
 import Map from "../map";
-const REACT_APP_GAPI_KEY1 = process.env.REACT_APP_GAPI_KEY;
+const REACT_APP_GAPI_KEY1 = process.env.REACT_APP_GAPI_KEY.trim();
 
 
 export default ({ user }) => {
 
     const name = capitalize(`${user.name.first} ${user.name.last}`);
     const location ={lng:-7.142379, lat: 52.246502} // WIT
+    const str1 = `https://maps.googleapis.com/maps/api/js?key=${REACT_APP_GAPI_KEY1}&v=3.exp&libraries=geometry,drawing,places`;
     return (
         <Fragment>
             <div className="row">
@@ -34,9 +35,11 @@ export default ({ user }) => {
                     <PublicProfile user={user} />
                 </div>
                 <div className="col-5" >
+
                     <Map
                         isMarkerShown
-                        googleMapURL = "https://maps.googleapis.com/maps/api/js?key=#{REACT_APP_GAPI_KEY1}&v=3.exp&libraries=geometry,drawing,places"
+                       // googleMapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD5sVluWImCyGXbY-hizgc61Pec_-yTTJc&v=3.exp&libraries=geometry,drawing,places"
+                        googleMapURL = {str1}
                         loadingElement={<div style={{ height: `100%` }} />}
                         location={location}
                         containerElement={<div style={{ height: `400px` }} />}
